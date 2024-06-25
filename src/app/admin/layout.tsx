@@ -21,13 +21,11 @@ export default function DashboardLayout({
       <div className="p-2 flex-1">
         <Sidebar />
       </div>
-      <div className="flex flex-col w-full bg-slate-100">
+      <div className="flex flex-col w-full">
         <div>
           <Header />
         </div>
-        <div className="flex-1 bg-slate-100 p-2">
-          <div className="bg-slate-300 h-full rounded-md p-2">{children}</div>
-        </div>
+        <div className="flex-1 p-4">{children}</div>
         <div>
           <Footer />
         </div>

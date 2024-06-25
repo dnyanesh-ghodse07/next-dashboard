@@ -1,6 +1,10 @@
+'use client';
+
 import React, { ReactNode } from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 
 const SidebarButton = ({
   path,
@@ -11,8 +15,11 @@ const SidebarButton = ({
   label: string;
   icon: ReactNode;
 }) => {
+  const pathname = usePathname()
+  const isActive = pathname === path;
+
   return (
-    <Button variant="link">
+    <Button variant={`${isActive ? 'default': 'secondary'}`} className="w-full flex justify-start">
       <Link href={path} className="flex gap-1 items-center">
         {icon}
         <span>{label}</span>

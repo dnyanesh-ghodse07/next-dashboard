@@ -1,33 +1,52 @@
 import React from "react";
 import { Button } from "../ui/button";
-import Link from "next/link";
-import { AiOutlineStock, AiOutlineUser } from "react-icons/ai";
+import { IoPeopleOutline } from "react-icons/io5";
+import { AiOutlineProduct } from "react-icons/ai";
+import { FaRegChartBar } from "react-icons/fa";
 import { CiSettings } from "react-icons/ci";
-import { IoAnalytics } from "react-icons/io5";
+import { HiOutlineDocumentReport } from "react-icons/hi";
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { AiOutlineHome } from "react-icons/ai";
+import { GrAnnounce } from "react-icons/gr";
 import SidebarButton from "./sidebar-button";
 const SidebarRoute = [
   {
-    path: "/dashboard/finance",
-    icon: <AiOutlineStock size={20} />,
-    label: "Finance",
+    path: "/admin/dashboard",
+    icon: <AiOutlineHome size={20} />,
+    label: "Dashboard",
   },
   {
-    path: "/dashboard/users",
-    icon: <AiOutlineUser size={20} />,
-    label: "Users",
+    path: "/admin/orders",
+    icon: <MdOutlineShoppingCart size={20} />,
+    label: "Orders",
   },
   {
-    path: "/dashboard/stock",
-    icon: <AiOutlineStock size={20} />,
-    label: "Stock",
+    path: "/admin/products",
+    icon: <AiOutlineProduct size={20} />,
+    label: "Products",
   },
   {
-    path: "/dashboard/analytics",
-    icon: <IoAnalytics size={20} />,
+    path: "/admin/customers",
+    icon: <IoPeopleOutline size={20} />,
+    label: "Customers",
+  },
+  {
+    path: "/admin/analytics",
+    icon: <FaRegChartBar size={20} />,
     label: "Analytics",
   },
   {
-    path: "/dashboard/settings",
+    path: "/admin/marketing",
+    icon: <GrAnnounce size={20} />,
+    label: "Marketing",
+  },
+  {
+    path: "/admin/reports",
+    icon: <HiOutlineDocumentReport size={20} />,
+    label: "Reports",
+  },
+  {
+    path: "/admin/settings",
     icon: <CiSettings size={20} />,
     label: "Settings",
   },

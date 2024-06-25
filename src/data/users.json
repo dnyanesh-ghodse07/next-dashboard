@@ -1,0 +1,87 @@
+{
+    "data": [
+      {
+        "name": "John Smith",
+        "email": "john.smith@example.com",
+        "phone": "+1 (123) 456-7890",
+        "recent_activity": "Made a purchase yesterday",
+        "order_history": [
+          {
+            "order_id": "ORD001",
+            "date": "2024-06-24",
+            "total_amount": 125.99,
+            "status": "Delivered"
+          },
+          {
+            "order_id": "ORD002",
+            "date": "2024-06-15",
+            "total_amount": 99.50,
+            "status": "Delivered"
+          }
+        ],
+        "contact_information": {
+          "address": "123 Main St, Anytown, USA"
+        },
+        "notes": "VIP customer"
+      },
+      {
+        "name": "Emily Johnson",
+        "email": "emily.johnson@example.com",
+        "phone": "+1 (234) 567-8901",
+        "recent_activity": "Added items to wishlist",
+        "order_history": [
+          {
+            "order_id": "ORD003",
+            "date": "2024-06-20",
+            "total_amount": 79.95,
+            "status": "Shipped"
+          }
+        ],
+        "contact_information": {
+          "email": "emily.johnson@example.com"
+        },
+        "notes": "Interested in upcoming sales"
+      },
+      {
+        "name": "Michael Williams",
+        "email": "michael.williams@example.com",
+        "phone": "+1 (345) 678-9012",
+        "recent_activity": "Visited the site today",
+        "order_history": [
+          {
+            "order_id": "ORD004",
+            "date": "2024-06-18",
+            "total_amount": 199.99,
+            "status": "Delivered"
+          }
+        ],
+        "contact_information": {
+          "phone": "+1 (345) 678-9012"
+        },
+        "notes": ""
+      },
+      {
+        "name": "Sarah Davis",
+        "email": "sarah.davis@example.com",
+        "phone": "+1 (456) 789-0123",
+        "recent_activity": "Reviewed a product",
+        "order_history": [],
+        "contact_information": {
+          "email": "sarah.davis@example.com"
+        },
+        "notes": "Active reviewer"
+      },
+      {
+        "name": "David Brown",
+        "email": "david.brown@example.com",
+        "phone": "+1 (567) 890-1234",
+        "recent_activity": "Signed up for newsletter",
+        "order_history": [],
+        "contact_information": {
+          "phone": "+1 (567) 890-1234"
+        },
+        "notes": ""
+      }
+    ]
+  }
+  
