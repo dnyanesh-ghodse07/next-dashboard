@@ -1,18 +1,19 @@
-import Card from '@/components/card'
-import React from 'react'
+"use client";
+import Card from "@/components/card";
+import useScreenSize from "@/hooks/useScreenSize";
+import React from "react";
 
-const page = () => {
+const Dashboard = () => {
   return (
-    <div>
-      <h1>Home</h1>
-      <div className='gap-2 sm:flex sm:gap-2'>
-          <Card/>
-          <Card/>
-          <Card/>
-          <Card/>
+    <>
+      <div className="flex flex-col md:flex-row gap-2">
+          <Card />
+          <Card />
+          <Card />
+          <Card />
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};
 
-export default page
+export default Dashboard;

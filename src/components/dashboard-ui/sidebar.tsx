@@ -8,6 +8,8 @@ import { HiOutlineDocumentReport } from "react-icons/hi";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
 import { GrAnnounce } from "react-icons/gr";
+import { FiLogOut } from "react-icons/fi";
+
 import SidebarButton from "./sidebar-button";
 const SidebarRoute = [
   {
@@ -70,7 +72,7 @@ const Sidebar = () => {
         </div>
         <div>
           <Button variant="destructive" size="sm">
-            Logout
+            <span className="hidden sm:block">Logout</span> <FiLogOut />
           </Button>
         </div>
       </div>

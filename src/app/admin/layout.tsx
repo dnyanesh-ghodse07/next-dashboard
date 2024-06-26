@@ -25,7 +25,7 @@ export default function DashboardLayout({
         <div>
           <Header />
         </div>
-        <div className="flex-1 p-4">{children}</div>
+        <div className="flex-1 p-4 overflow-scroll scroll scrollbar-hide">{children}</div>
         <div>
           <Footer />
         </div>

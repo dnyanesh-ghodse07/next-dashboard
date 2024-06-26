@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => {
-  return <div className="bg-slate-200 p-2 shadow-sm">
+  return <div className="p-4 shadow-sm">
     Dnyanesh Ghodse
   </div>;
 };
