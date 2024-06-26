@@ -54,9 +54,9 @@ const SidebarRoute = [
 const Sidebar = () => {
   return (
     <>
-      <div className="flex flex-col justify-between h-full min-w-44">
+      <div className="flex flex-col justify-between h-full md:min-w-44">
         <div className="flex flex-col gap-2 items-start">
-          <h1 className="text-xl p-2 text-red-500">Dashboard</h1>
+          <h1 className="text-xl p-2 text-red-500">D</h1>
           {SidebarRoute.map((route) => {
             return (
               <SidebarButton

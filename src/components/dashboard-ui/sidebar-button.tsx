@@ -19,10 +19,10 @@ const SidebarButton = ({
   const isActive = pathname === path;
 
   return (
-    <Button variant={`${isActive ? 'default': 'secondary'}`} className="w-full flex justify-start">
+    <Button variant={`${isActive ? 'default': 'secondary'}`} className="sm:w-full flex justify-start">
       <Link href={path} className="flex gap-1 items-center">
         {icon}
-        <span>{label}</span>
+        <span className="hidden sm:block">{label}</span>
       </Link>
     </Button>
   );
