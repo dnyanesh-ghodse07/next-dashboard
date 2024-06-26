@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div>
       <h1>Home</h1>
-      <div className='flex gap-2'>
+      <div className='gap-2 sm:flex sm:gap-2'>
           <Card/>
           <Card/>
           <Card/>
