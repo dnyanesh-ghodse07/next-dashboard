@@ -10,32 +10,36 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import customers from "@/data/users.json";
+import { getUser } from "@/actions/getUsers";
+import { User } from "@/types/users";
 
-const page = () => {
+const page = async () => {
+  const users: User[] = await getUser();
+  console.log(users.length);
   return (
     <div>
       <div>
-        <h1 className="text-2xl p-4 text-blue-950">Customers :</h1>
+        <h1 className="text-2xl py-4 text-blue-950">Users :</h1>
       </div>
-      <Table>
+      <Table className="bg-white rounded-md">
         {/* <TableCaption>A list of your recent invoices.</TableCaption> */}
         <TableHeader>
           <TableRow>
             <TableHead>Name</TableHead>
-            <TableHead>Email</TableHead>
+            <TableHead>User Name</TableHead>
             <TableHead>Phone</TableHead>
-            <TableHead>Notes</TableHead>
-            <TableHead>Recent Activity</TableHead>
+            <TableHead>Email</TableHead>
+            <TableHead>Address</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
-          {customers.data.map((invoice) => (
-            <TableRow key={invoice.name}>
-              <TableCell>{invoice.name}</TableCell>
-              <TableCell>{invoice.email}</TableCell>
-              <TableCell>{invoice.phone}</TableCell>
-              <TableCell>{invoice.notes}</TableCell>
-              <TableCell>{invoice.recent_activity}</TableCell>
+          {users.map((user) => (
+            <TableRow key={user.id} className="cursor-pointer">
+              <TableCell>{user.name.firstname}</TableCell>
+              <TableCell>{user.username}</TableCell>
+              <TableCell>{user.phone}</TableCell>
+              <TableCell>{user.email}</TableCell>
+              <TableCell>{user.address.city}</TableCell>
             </TableRow>
           ))}
         </TableBody>
